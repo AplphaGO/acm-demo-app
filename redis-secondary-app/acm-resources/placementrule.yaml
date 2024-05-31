@@ -9,5 +9,5 @@ metadata:
 spec:
   clusterSelector:
     matchLabels:
-      name: rosa-sbmr2
+      name: spoke2
 
