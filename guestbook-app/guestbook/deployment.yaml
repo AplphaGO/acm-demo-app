@@ -31,4 +31,5 @@ spec:
         - name: REDIS_secondary_SERVICE_HOST
           value: redis-secondary.guestbook.svc.clusterset.local
         ports:
-        - containerPort: 80
+        - name: http
+          containerPort: 3000
