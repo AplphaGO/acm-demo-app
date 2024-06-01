@@ -19,7 +19,7 @@ spec:
       - name: php-redis
         #image: gcr.io/google-samples/gb-frontend@sha256:e5233a1e2a6dc9c4ae1d1b754e3a3f62ecdc1da81b31422aff4e7390a0c6e534
         #image: quay.io/dpkshetty/guestbook:v1
-        image: docker.io/forestgun007/google-samples-gb-frontend:v4
+        image: quay.io/zhipeng/gb-frontend:clusterset
         resources:
           requests:
             cpu: 100m
@@ -29,7 +29,7 @@ spec:
           value: env
         - name: REDIS_PRIMARY_SERVICE_HOST
           value: redis-primary.guestbook.svc.clusterset.local
-        - name: REDIS_secondary_SERVICE_HOST
+        - name: REDIS_SECONDARY_SERVICE_HOST
           value: redis-secondary.guestbook.svc.clusterset.local
         ports:
         - name: http
