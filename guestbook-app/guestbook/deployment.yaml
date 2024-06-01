@@ -34,3 +34,4 @@ spec:
         ports:
         - name: http
           containerPort: 3000
+        imagePullPolicy: Always
